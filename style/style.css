@@ -84,5 +84,73 @@ padding: 32px;
     
     /* height: 50px; */
     margin: 0px auto;
-    padding-bottom: 45px;
+    padding-bottom: 30px;
+}
+ /* -----------------------Feature scetion style----------------------- */
+
+.quick-list{
+    margin: 65px 0px;
+}
+ .feature-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-gallary{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.feature{
+    width: 300px;
+}
+.feature-title{
+    color: var(--Dark-03, #727272);
+font-size: 35px;
+font-weight: 500;
+
+}
+.feature-description{
+    color: var(--Dark-03, #727272);
+font-size: 16px;
+font-weight: 400;
+margin: 24px 0px;
+}
+.of-our{
+    color: #131313;
+    font-weight: 700;
+}
+.features{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
+
+
+/*------------------ responsive styles are here --------------------------*/
+@media screen and (max-width: 625px) {
+    .nav{
+        flex-direction: column;
+        
+    }
+    
+    .banner-menu{
+        flex-direction: column;
+        margin-top: 32px;
+    }
+    .banner-menu li{
+        margin: 10px
+    }
+    .banner-contant{
+        width: 100%;
+    }
+    .banner-contant-title{
+        font-size: 45px;
+    }
 }
