@@ -229,6 +229,57 @@ font-size: 25px;
 font-weight: 500;
 }
 
+/* -----------------------------some facts------------------------------ */
+
+.some-facts{
+    margin-top: 140px;
+}
+.facts-title{
+    color: var(--Dark-01, #131313);
+font-size: 45px;
+font-weight: 700;
+margin-bottom: 20px;
+
+}
+.facts-description{
+    color: var(--Dark-03, #727272);
+font-size: 16px;
+font-weight: 400;
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.batch{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 120px;
+}
+.batch-box{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 8px;
+border: 1px solid #FF900E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.batch-box img{
+    width: 45px;
+    height: 45px;
+}
+.batch-box h4{
+    color: var(--Dark-02, #424242);
+font-size: 45px;
+font-weight: 600;
+
+}
+.batch-box p{
+    color: var(--Dark-03, #727272);
+font-size: 20px;
+font-weight: 600;
+}
+
 
 
 
@@ -236,7 +287,7 @@ font-weight: 500;
 /*------------------ responsive styles are here --------------------------*/
 /* -----------------------mobile device------------------ */
 @media screen and (max-width: 625px) {
-    .nav {
+    .nav, .experience-section, .batch {
         flex-direction: column;
 
     }
@@ -267,6 +318,13 @@ font-weight: 500;
     .feature {
         width: 70%;
     }
+    .experience-year {
+        margin-top: 20px;
+        position: static;
+    }
+    .facts-description {
+        width: auto;
+    }
 
     /* .feature-section{
         flex-direction: column-reverse;
@@ -278,5 +336,15 @@ font-weight: 500;
 @media screen and (min-width: 625px) and (max-width: 870px) {
     .feature {
         width: 30%;
+    }
+    .experience-section{
+        flex-direction: column;
+    }
+    .experience-year {
+        margin-top: 20px;
+        position: static;
+    }
+    .facts-description {
+        width: auto;
     }
 }
