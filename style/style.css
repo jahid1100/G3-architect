@@ -1,132 +1,232 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap');
-*{
+
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     font-family: 'Work Sans', sans-serif;
 }
-.primary-btn{
+
+.primary-btn {
     padding: 20px 25px;
     border-radius: 8px;
     background: #FF900E;
     border: none;
     color: #fff;
+    cursor: pointer;
     /* margin-bottom: 32px; */
 
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
 }
+
 /*---------------Header section style---------------  */
-header{
+header {
     background-color: rgba(255, 144, 14, 0.10);
 }
-.container{
+
+.container {
     width: 75%;
     max-width: 1440px;
     margin: 0px auto;
     /* text-align: center; */
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
-    
+
 }
-.banner .container .nav{
-   
-}
-.banner-title{
+
+/* .banner .container .nav {} */
+
+.banner-title {
     color: var(--Dark-01, #131313);
-text-align: center;
-font-size: 45px;
-font-weight: 700;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
 }
-.banner ul li{
+
+.banner ul li {
     list-style: none;
 }
-.banner-menu{
+
+.banner-menu {
     display: flex;
 }
-.banner-menu li{
+
+.banner-menu li {
     margin-left: 25px;
     color: var(--Dark-02, #424242);
-text-align: center;
-font-size: 18px;
-font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
 }
-.banner-menu li a{
+
+.banner-menu li a {
     text-decoration: none;
 }
-.banner-contant{
+
+.banner-contant {
     width: 65%;
     max-width: 860px;
     margin: 116px auto 32px;
     text-align: center;
 }
-.banner-contant-title{
+
+.banner-contant-title {
     color: var(--Dark-01, #131313);
-text-align: center;
-font-size: 64px;
-font-weight: 700;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
 }
-.banner-contant-description{
+
+.banner-contant-description {
     color: var(--Dark-03, #727272);
-text-align: center;
-font-size: 16px;
-font-weight: 400;
-padding: 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 32px;
 }
-.banner-img{
-    
+
+.banner-img {
+
     /* height: 50px; */
     margin: 0px auto;
     padding-bottom: 30px;
 }
- /* -----------------------Feature scetion style----------------------- */
 
-.quick-list{
+/* -----------------------Feature scetion style----------------------- */
+
+.quick-list {
     margin: 65px 0px;
 }
- .feature-section{
+
+.feature-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 35px;
-    justify-content: space-around;
+    gap: 25px;
+    justify-content: space-between;
     align-items: center;
 }
-.img-gallary{
-    width: 500px;
-    height: 500px;
+
+.img-gallary {
+    width: 400px;
+    height: 400px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 16px;
 }
-.feature{
+
+.feature {
     width: 300px;
 }
-.feature-title{
+
+.feature-title {
     color: var(--Dark-03, #727272);
-font-size: 35px;
-font-weight: 500;
+    font-size: 35px;
+    font-weight: 500;
 
 }
-.feature-description{
+
+.feature-description {
     color: var(--Dark-03, #727272);
-font-size: 16px;
-font-weight: 400;
-margin: 24px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 24px 0px;
 }
-.of-our{
+
+.of-our {
     color: #131313;
     font-weight: 700;
 }
-.features{
+
+.features {
     color: #FF900E;
     font-weight: 700;
+}
+
+/* ------------------------experience section style------------------------ */
+.experience-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.experience-contant {
+    width: 410px;
+}
+
+.contant-title {
+    color: var(--Dark-01, #131313);
+    font-size: 35px;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.contant-description {
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.contant-cart {
+    width: 400px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px 25px;
+    margin-bottom: 20px;
+}
+
+.cart-contant-title {
+    color: var(--Dark-01, #131313);
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 8px;
+}
+
+.cart-contant-description {
+    color: var(--Dark-03, #727272);
+font-size: 16px;
+font-weight: 400;
+}
+.img-contant{
+    width: 350px;
+    height: 750px;
+}
+.experience-year{
+    width: 188px;
+    height: 114px;
+    border: none;
+    border-radius: 8px;
+    background: #FF900E;
+    position: relative;
+    top: -70px;
+    left: -70px;
+
+}
+.experience-year h3{
+    color: #FFF;
+text-align: center;
+font-size: 45px;
+font-weight: 700;
+}
+.experience-year p{
+    color: #FFF;
+font-size: 25px;
+font-weight: 500;
 }
 
 
@@ -134,23 +234,49 @@ margin: 24px 0px;
 
 
 /*------------------ responsive styles are here --------------------------*/
+/* -----------------------mobile device------------------ */
 @media screen and (max-width: 625px) {
-    .nav{
+    .nav {
         flex-direction: column;
-        
+
     }
-    
-    .banner-menu{
+
+    .banner-menu {
         flex-direction: column;
         margin-top: 32px;
     }
-    .banner-menu li{
+
+    .banner-menu li {
         margin: 10px
     }
-    .banner-contant{
+
+    .banner-contant {
         width: 100%;
     }
-    .banner-contant-title{
+
+    .banner-contant-title {
         font-size: 45px;
+    }
+
+    .img-gallary {
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        width: 70%;
+    }
+
+    /* .feature-section{
+        flex-direction: column-reverse;
+    } */
+
+}
+
+/* ----------------------------tablet device------------------------------- */
+@media screen and (min-width: 625px) and (max-width: 870px) {
+    .feature {
+        width: 30%;
     }
 }
